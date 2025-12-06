@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ButtonLuton</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#9FE2BF">
+        <script type="text/javascript">
+            <!--
+                function sayHello() {
+                    alert("You have pressed the button _ number of times")
+                }
+            //-->
+            function showTime() {
+                const timeNow = new Date().toLocaleTimeString();
+                document.getElementById('clock').textContent = timeNow;
+            }
+
+            setInterval(showTime, 1000);
+
+
+            let colors = ['white', 'darksalmon', 'dodgerblue', 'cornflowerblue', 'violet'];
+
+            let button = document.getElementById('button');
+
+            button.addEventListener('click', function(){
+
+            var randomColor = colors[Math.floor(Math.random()*colors.length)]
+
+            let container = document.getElementById('container');
+
+                container.style.background = randomColor;
+            })
+        </script>
+        <style type="text/css">
+            default{ cursor: default;}
+            pointer{ cursor: pointer;}
+            wait{ cursor: wait;}
+            body{
+                background-color: darksalmon;
+            }
+            p{
+                font-family:'Times New Roman', Times, serif;
+                color: fuchsia;
+                font-size: xx-large;
+            }
+            button{
+                margin: 0px;
+                padding: 0px;
+                size: 708px;
+                border-width: 0px;
+            }
+            button:active{
+                background-color: burlywood;
+            }
+            #background{
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+            <div>
+                <button id="button" onclick="var randomColor"><img src="cube.png"></button>
+            </div>
+    </body>
+</html>
