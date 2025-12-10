@@ -7,10 +7,22 @@
         <meta name="theme-color" content="#9FE2BF">
         <script type="text/javascript">
 
-            const button = document.querySelector("button");
-            button.addEventListener("click", (event) => {
-                button.textContent = 'Times clicked: ${event.detail}';
-            });
+            let number = 0;
+
+            function increment() {
+                number++;
+                document.getElementById("number").innerHTML = number;
+            }
+
+            function decrement() {
+                number--;
+                document.getElementById("number").innerHTML = number;
+            }
+
+            function reset() {
+                let number = 0;
+                document.getElementById("number").innerHTML = number;
+            }
 
         </script>
         <style type="text/css">
@@ -19,16 +31,28 @@
             wait{ cursor: wait;}
             body{
                 background-color: darksalmon;
+                margin: 0px;
+                padding-top: 5px;
+                padding-bottom: 0px;
             }
             h1{
                 color: fuchsia;
                 margin-top: 34px;
                 font-family: Arial, Helvetica, sans-serif;
             }
-            p{
-                font-family:'Times New Roman', Times, serif;
+            h2{
                 color: fuchsia;
-                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                color: fuchsia;
+                font-size: x-large;
+            }
+            span{
+                font-family: Arial, Helvetica, sans-serif;
+                color: fuchsia;
+                font-size: larger;
             }
             button{
                 width: 403px;
@@ -56,22 +80,27 @@
                 height: 708px;
             }
             footer{
+                height: 75px;
+                margin-top: 0px;
+                margin-bottom: 0px;
                 background-color: deeppink;
-                height: 53px;
                 font-family: Arial, Helvetica, sans-serif;
+                color: fuchsia;
             }
             footer:hover{
                 cursor: default;
             }
-            #footer{
-                position: fixed;
-                bottom: 0;
-                z-index: 100;
-            }
         </style>
     </head>
     <body>
-                <button>☼</button><button>♥</button><button>◙</button>
-                <p id="count"></p>
+        <div>
+            <button id="increment" onclick="increment()">☼</button><button id="decrement" onclick="decrement()">♥</button><button id="reset" onclick="reset()">◙</button>
+            <br/><h1>Number of clicks: <span id="number"></span></h1>
+        </div>
+
+        <footer>
+            <p align="right"><strong>Website Coder and Designer: Ciku135 from Github</strong>
+            <br/><a href="https://github.com/Ciku135">Visit me here</a></p>
+        </footer>
     </body>
 </html>
