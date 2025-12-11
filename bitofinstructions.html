@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bit of Instructions</title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function showTime() {
+                const timeNow = new Date().toLocaleTimeString();
+                document.getElementById('clock').textContent = timeNow;
+            }
+
+            setInterval(showTime, 1000)
+        </script>
+        <style type="text/css">
+            default{ cursor: default;}
+            pointer{ cursor: pointer;}
+            wait{ cursor: wait;}
+            body{
+                background-color: deeppink;
+                margin: 0px;
+                padding-top: 5px;
+                padding-bottom: 0px;
+                text-align: center;
+            }
+            h1{
+                color: fuchsia;
+                margin-top: 34px;
+                padding-left: 8px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                color: fuchsia;
+                padding-left: 8px;
+                font-size: larger;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            span{
+                color: fuchsia;
+                background-color: blueviolet;
+                background-size: 33px;
+                font-size: 24px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 9px;
+            }
+            span:hover{
+                font-size: 33px;
+                transition-duration: 0.4s;
+                cursor: default;
+            }
+            a{
+                color: fuchsia;
+                text-decoration: underline;
+                font-size: larger;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            footer{
+                height: 139px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: rgb(150, 9, 84);
+                font-family: Arial, Helvetica, sans-serif;
+                color: fuchsia;
+            }
+            footer:hover{
+                cursor: default;
+            }
+        </style>
+    </head>
+    <body>
+        <span id="clock"></span> <a href="buttonluton.html">Back to the main page</a>
+        <h1>How buttonluton works</h1>
+        <h1>Through <strong>&#127881 Images &#127881</strong></h1>
+        <p><strong>The left button increases the number of clicks.</strong></p>
+        <img src="increment button.png">
+        <p><strong>The right button decreases the number of clicks</strong></p>
+        <img src="decrement button.png">
+        <p><strong>The right button resets the number of clicks and(as a bonus) changes the background color</strong></p>
+        <img src="reset and background switch button.png">
+        <p><strong>I hope I have provided enough information that you needed</strong></p>
+        <footer>
+            <p align="right"><strong>Website Coder and Designer: Ciku135 from Github</strong>
+            <br/><a href="https://github.com/Ciku135">Visit me here</a></p>
+            <p align="right"><strong>Made with love</strong></p>
+            <p align="center">&#128151 &#128151 &#128151</p>
+        </footer>
+    </body>
+</html>
