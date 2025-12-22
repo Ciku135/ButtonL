@@ -26,9 +26,6 @@
 
         </script>
         <style type="text/css">
-            default{ cursor: default;}
-            pointer{ cursor: pointer;}
-            wait{ cursor: wait;}
             body{
                 background-color: deeppink;
                 margin: 0px;
@@ -37,13 +34,13 @@
                 text-align: center;
             }
             h1{
-                color: fuchsia;
+                color: darkblue;
                 margin-top: 34px;
                 padding-left: 8px;
                 font-family: Arial, Helvetica, sans-serif;
             }
             p{
-                color: fuchsia;
+                color: darkblue;
                 padding-top: 5px;
                 padding-left: 8px;
                 font-size: larger;
@@ -69,7 +66,7 @@
                 cursor: default;
             }
             a{
-                color: fuchsia;
+                color: darkblue;
                 text-decoration: underline;
                 font-size: larger;
                 font-family: Arial, Helvetica, sans-serif;
@@ -79,28 +76,32 @@
                 transition-duration: 0.4s;
             }
             button{
-                width: 74px;
-                height: 74px;
-                margin-left: 4px;
-                margin-right: 0px;
+                width: 98px;
+                height: 98px;
+                margin: 0px;
                 border: 0px;
                 border-radius: 74px;
-                background-color: crimson;
-                color: magenta;
+                background-color: cornflowerblue;
+                color: darkblue;
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: 54px;
+                font-size: 74px;
             }
             button:hover{
-                width: 88px;
-                height: 88px;
+                width: 108px;
+                height: 108px;
+                border: 0px;
                 transition-duration: 0.4px;
-                cursor: default;
             }
             button:active{
                 color: black;
                 background-color: white;
                 transition-duration: 0s;
                 cursor: wait;
+            }
+            img[src="number of clicks.png"]:hover{
+                width: 495px;
+                height: 94px;
+                transition-duration: 0.4s;
             }
             img[src="increment button.png"]:hover{
                 width: 659px;
@@ -136,11 +137,13 @@
         <span id="clock"></span> <a href="buttonluton.html">Back to the main page</a>
         <h1>How buttonluton works</h1>
         <h1>With <strong>&#127881 Images &#127881</strong></h1>
-        <p><strong>The left button increases the number of clicks.</strong></p>
+        <p><strong>Below the buttons shown is the number of clicks</strong></p>
+        <img src="number of clicks.png" width="487px" height="88px">
+        <p><strong>The left button increases the number of clicks shown</strong></p>
         <img src="increment button.png" width="639px" height="609px">
-        <p><strong>The right button decreases the number of clicks</strong></p>
+        <p><strong>The middle button decreases the number of clicks shown</strong></p>
         <img src="decrement button.png" width="637px" height="657px">
-        <p><strong>The right button resets the number of clicks and(as a bonus) changes the background color</strong></p>
+        <p><strong>The right button resets the number of clicks shown and(as a bonus) changes the background color</strong></p>
         <img src="reset and background switch button.png" width="619px" height="664px">
         <p><strong>Upon contact, the background changes to a random color and the background can change back to the original color by refreshing the page</strong></p>
         <p><strong>I hope I have provided enough information that you needed</strong></p>
