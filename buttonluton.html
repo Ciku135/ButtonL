@@ -75,6 +75,14 @@
                 margin-top: 5px;
                 margin-left: 8px;
             }
+            a:hover{
+                color: rgb(200, 100, 67);
+                transition-duration: 0.4s;
+            }
+            a:active{
+                color: white;
+                cursor: wait;
+            }
             button{
                 width: 398px;
                 height: 398px;
@@ -87,7 +95,7 @@
                 font-size: 122px;
                 background-color: rgb(215, 108, 73);
                 font-family: Arial, Helvetica, sans-serif;
-                color: rgb(142, 54, 24)
+                color: rgb(142, 54, 24);
             }
             button:hover{
                width: 398px;
@@ -116,7 +124,7 @@
                 height: 175px;
                 margin-top: 0px;
                 margin-bottom: 0px;
-                background-color: deeppink;
+                background-color: rgb(93, 15, 56);
                 font-family: Arial, Helvetica, sans-serif;
                 color: fuchsia;
             }
@@ -126,9 +134,9 @@
         </style>
     </head>
     <body>
-        <a href="bitofinstructions.html" style="color: black;">Instructions if you don't know what to do</a>
+        <a href="bitofinstructions.html" style="color: black;">Instructions if you don't know what to do(or if you want to)</a>
         <div>
-            <button id="increment" onclick="increment()">☼</button><button id="decrement" onclick="decrement()">♥</button><button id="reset" onclick="reset(); changeBackground()">◙</button>
+            <button id="increment" onclick="increment()">˄</button><button id="decrement" onclick="decrement()">˅</button><button id="reset" onclick="reset(); changeBackground()">R</button>
             <br/><h1>Number of clicks: <span id="number"></span></h1>
         </div>
 
