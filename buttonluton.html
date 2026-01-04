@@ -35,6 +35,13 @@
             "rgb(" + red + ", " + green + ", " + blue + ")";
             }
 
+            function showTime() {
+                const timeNow = new Date().toLocateTimeString();
+                document.getElementById('clock').textContent = timeNow;
+            }
+
+            setInterval(showTime, 1000);
+
         </script>
         <style type="text/css">
             default{ cursor: default;}
@@ -116,10 +123,6 @@
                 background-color: rgb(200, 100, 67);
                 transition-duration: 0s;
             }
-            img{
-                width: 708px;
-                height: 708px;
-            }
             footer{
                 height: 175px;
                 margin-top: 0px;
@@ -130,11 +133,12 @@
             }
             footer:hover{
                 cursor: default;
+                background-color: darkred;
             }
         </style>
     </head>
     <body>
-        <a href="bitofinstructions.html" style="color: black;">Instructions if you don't know what to do(or if you want to)</a>
+        <a href="buttonluton.html" style="color: black;">ButtonLuton</a>
         <div>
             <button id="increment" onclick="increment()">˄</button><button id="decrement" onclick="decrement()">˅</button><button id="reset" onclick="reset(); changeBackground()">R</button>
             <br/><h1>Number of clicks: <span id="number"></span></h1>

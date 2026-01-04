@@ -1,1 +1,1 @@
-Stronger than you - My friend's favorite songs from Steven Universe
+Stronger than you - One of my friend's favorite song from Steven Universe
